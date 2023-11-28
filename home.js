@@ -3,8 +3,8 @@ function f1() {
 	//document.getElementById("textarea1").style.fontWeight = "bold"; 
 	const area = document.getElementById("textarea1");
 	const val = area.value;
-	const bad = '\u201C';
-	val.replaceAll("
+	const bad = '\u201c';
+	val.replaceAll(bad, '\"');
 } 
 
 function f2() { 
