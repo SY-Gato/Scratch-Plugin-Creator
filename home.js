@@ -5,7 +5,7 @@ function f1() {
 	const val = area.value;
 	const bad = '\u201c';
 	const regex = "/"+bad+"/gi"
-	area.value = val.replaceAll(regex, '\"');
+	area.value = val.replaceAll(bad, '\"');
 } 
 
 function f2() { 
