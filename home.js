@@ -3,9 +3,18 @@ function f1() {
 	//document.getElementById("textarea1").style.fontWeight = "bold"; 
 	const area = document.getElementById("textarea1");
 	const val = area.value;
-	const bad = '\u201c';
-	const regex = "/"+bad+"/gi"
-	area.value = val.replaceAll(bad, '\"');
+	//const bad = '\u201c';
+	//const regex = "/"+bad+"/gi";
+	//area.value = val.replaceAll(bad, '\"')
+	const chars = val.split('');
+	let e = "";
+	for (let i=0; i<chars.length; i++) {
+		let temp = chars[i];
+		e += temp.replace("\u201c", "\"");
+	}
+	alert(e);
+	area.value = e;
+	
 } 
 
 function f2() { 
