@@ -4,7 +4,8 @@ function f1() {
 	const area = document.getElementById("textarea1");
 	const val = area.value;
 	const bad = '\u201c';
-	area.value = val.replaceAll(bad, '\"');
+	const regex = "/"+bad+"/gi"
+	area.value = val.replaceAll(regex, '\"');
 } 
 
 function f2() { 
