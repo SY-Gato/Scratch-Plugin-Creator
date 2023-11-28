@@ -1,6 +1,10 @@
 function f1() { 
 	//function to make the text bold using DOM method 
 	//document.getElementById("textarea1").style.fontWeight = "bold"; 
+	const area = document.getElementById("textarea1");
+	const val = area.value;
+	const bad = '\u201C';
+	val.replaceAll("
 } 
 
 function f2() { 
