@@ -4,7 +4,7 @@ function f1() {
 	const area = document.getElementById("textarea1");
 	const val = area.value;
 	const bad = '\u201c';
-	val.replaceAll(bad, '\"');
+	area.value = val.replaceAll(bad, '\"');
 } 
 
 function f2() { 
