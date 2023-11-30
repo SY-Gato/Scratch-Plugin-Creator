@@ -1,6 +1,5 @@
-let txt = document.getElementById("Convert");
-function p() {
-  this.Text = txt;
-}
+let cl = document.getElementById("Convert");
+let txtin = document.getElementById("textarea");
+let txtout = document.getElementById("textarea2");
 
-p.Prototype
+function
